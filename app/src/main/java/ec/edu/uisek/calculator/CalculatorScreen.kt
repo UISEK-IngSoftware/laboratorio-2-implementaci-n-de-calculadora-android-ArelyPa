@@ -93,6 +93,7 @@ fun CalculatorGrid(onEvent: (CalculatorEvent) -> Unit) {
             }
         }
 
+
         item(span = { GridItemSpan(2) }) { CalculatorButton(label = "AC") { onEvent(CalculatorEvent.AllClear) } }
         item {}
         item { CalculatorButton(label = "C") { onEvent(CalculatorEvent.Clear) } }
